@@ -59,7 +59,7 @@ Set to C<0> to disable timeout checking.  Defaults to C<0>.
 
 has timeout => (
     is      => 'ro',
-    isa     => PositiveOrZeroInt,
+    isa     => PositiveOrZeroNum,
     default => 0,
 );
 
