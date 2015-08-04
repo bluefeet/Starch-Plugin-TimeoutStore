@@ -68,6 +68,8 @@ foreach my $method (qw( set get remove )) {
         my $orig = shift;
         my $self = shift;
 
+        local $Carp::Internal{ (__PACKAGE__) } = 1;
+
         my $timeout = $self->timeout();
         return $self->$orig( @_ ) if $timeout == 0;
 
