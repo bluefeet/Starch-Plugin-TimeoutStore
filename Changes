@@ -3,6 +3,7 @@ Revision history for Perl extension Starch::Plugin::TimeoutStore.
 {{$NEXT}}
 
  - Make sure we set Carp::Internal during set/get/remove.
+ - Migrate build tooling from Dist::Zilla to Minilla.
 
 0.06 2015-08-01
 

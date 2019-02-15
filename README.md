@@ -1,10 +1,8 @@
-=pod
-
-=head1 NAME
+# NAME
 
 Starch::Plugin::TimeoutStore - Throw an exception if store access surpass a timeout.
 
-=head1 SYNOPSIS
+# SYNOPSIS
 
     my $starch = Starch->new(
         plugins => ['::TimeoutStore'],
@@ -15,46 +13,44 @@ Starch::Plugin::TimeoutStore - Throw an exception if store access surpass a time
         ...,
     );
 
-=head1 DESCRIPTION
+# DESCRIPTION
 
-This plugin causes all calls to C<set>, C<get>, and C<remove> to throw
+This plugin causes all calls to `set`, `get`, and `remove` to throw
 an exception if they surpass a timeout period.
 
-The timeout is implemented using L<Sys::SigAction>.
+The timeout is implemented using [Sys::SigAction](https://metacpan.org/pod/Sys::SigAction).
 
 Note that some stores implement timeouts themselves and their native
 may be better than this naive implementation.
 
 The whole point of detecting timeouts is so that you can still serve
 a web page even if the underlying store backend is failing, so
-using this plugin with L<Starch::Plugin::LogStoreExceptions> is
+using this plugin with [Starch::Plugin::LogStoreExceptions](https://metacpan.org/pod/Starch::Plugin::LogStoreExceptions) is
 probably a good idea.
 
-=head1 OPTIONAL STORE ARGUMENTS
+# OPTIONAL STORE ARGUMENTS
 
 These arguments are added to classes which consume the
-L<Starch::Store> role.
+[Starch::Store](https://metacpan.org/pod/Starch::Store) role.
 
-=head2 timeout
+## timeout
 
 How many seconds to timeout.  Fractional seconds may be passed, but
-may not be supported on all systems (see L<Sys::SigAction/ABSTRACT>).
-Set to C<0> to disable timeout checking.  Defaults to C<0>.
+may not be supported on all systems (see ["ABSTRACT" in Sys::SigAction](https://metacpan.org/pod/Sys::SigAction#ABSTRACT)).
+Set to `0` to disable timeout checking.  Defaults to `0`.
 
-=head1 AUTHOR
+# AUTHOR
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
+Aran Clary Deltac <bluefeet@gmail.com>
 
-=head1 ACKNOWLEDGEMENTS
+# ACKNOWLEDGEMENTS
 
-Thanks to L<ZipRecruiter|https://www.ziprecruiter.com/>
+Thanks to [ZipRecruiter](https://www.ziprecruiter.com/)
 for encouraging their employees to contribute back to the open
 source ecosystem.  Without their dedication to quality software
 development this distribution would not exist.
 
-=head1 LICENSE
+# LICENSE
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
-
-=cut

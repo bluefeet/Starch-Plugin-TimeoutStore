@@ -1,5 +1,7 @@
 package Starch::Plugin::TimeoutStore;
 
+$Starch::Plugin::TimeoutStore::VERSION = '0.06';
+
 =head1 NAME
 
 Starch::Plugin::TimeoutStore - Throw an exception if store access surpass a timeout.
