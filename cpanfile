@@ -1,3 +1,4 @@
+requires 'perl' => '5.008001';
 requires 'Starch' => '0.10';
 requires 'Sys::SigAction' => '0.20';
 requires 'strictures' => '2.000000';
