@@ -1,6 +1,6 @@
 package Starch::Plugin::TimeoutStore;
 
-$Starch::Plugin::TimeoutStore::VERSION = '0.07';
+our $VERSION = '0.07';
 
 =head1 NAME
 
