@@ -1,5 +1,6 @@
 package Starch::Plugin::TimeoutStore;
-
+use 5.010001;
+use strictures 2;
 our $VERSION = '0.07';
 
 =head1 NAME
@@ -39,7 +40,6 @@ use Starch::Util qw( croak );
 use Sys::SigAction qw( timeout_call );
 
 use Moo::Role;
-use strictures 2;
 use namespace::clean;
 
 with qw(
