@@ -2,6 +2,7 @@ Revision history for Perl extension Starch-Plugin-TimeoutStore.
 
 {{$NEXT}}
 
+ - Require Starch 0.11 so that we get the better croak.
  - Require perl 5.10.1.
  - Simplify VERSION declarations.
 
