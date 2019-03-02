@@ -74,7 +74,7 @@
          "web" : "https://github.com/bluefeet/Starch-Plugin-TimeoutStore"
       }
    },
-   "version" : "0.08",
+   "version" : "0.09",
    "x_authority" : "cpan:BLUEFEET",
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_static_install" : 1
