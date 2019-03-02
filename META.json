@@ -42,8 +42,9 @@
       },
       "runtime" : {
          "requires" : {
-            "Moo" : "2.000000",
-            "Starch" : "0.11",
+            "Moo::Role" : "2.000000",
+            "Starch::Plugin::ForStore" : "0.11",
+            "Starch::Util" : "0.11",
             "Sys::SigAction" : "0.20",
             "Type::Tiny" : "1.000005",
             "namespace::clean" : "0.24",
@@ -53,7 +54,11 @@
       },
       "test" : {
          "requires" : {
-            "Test2::V0" : "0.000094"
+            "Moo" : "2.000000",
+            "Starch" : "0.11",
+            "Starch::Store" : "0.11",
+            "Test2::V0" : "0.000094",
+            "Test::Starch" : "0.11"
          }
       }
    },
@@ -70,6 +75,7 @@
       }
    },
    "version" : "0.08",
+   "x_authority" : "cpan:BLUEFEET",
    "x_serialization_backend" : "JSON::PP version 2.97001",
    "x_static_install" : 1
 }

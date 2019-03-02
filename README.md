@@ -39,9 +39,9 @@ How many seconds to timeout.  Fractional seconds may be passed, but
 may not be supported on all systems (see ["ABSTRACT" in Sys::SigAction](https://metacpan.org/pod/Sys::SigAction#ABSTRACT)).
 Set to `0` to disable timeout checking.  Defaults to `0`.
 
-# AUTHOR
+# AUTHORS
 
-Aran Clary Deltac <bluefeet@gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 # ACKNOWLEDGEMENTS
 

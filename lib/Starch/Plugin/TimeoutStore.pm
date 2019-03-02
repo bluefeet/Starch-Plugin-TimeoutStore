@@ -42,9 +42,7 @@ use Sys::SigAction qw( timeout_call );
 use Moo::Role;
 use namespace::clean;
 
-with qw(
-    Starch::Plugin::ForStore
-);
+with 'Starch::Plugin::ForStore';
 
 =head1 OPTIONAL STORE ARGUMENTS
 
@@ -93,9 +91,9 @@ foreach my $method (qw( set get remove )) {
 1;
 __END__
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-Aran Clary Deltac <bluefeetE<64>gmail.com>
+    Aran Clary Deltac <bluefeet@gmail.com>
 
 =head1 ACKNOWLEDGEMENTS
 
