@@ -5,7 +5,7 @@ our $VERSION = '0.08';
 
 =head1 NAME
 
-Starch::Plugin::TimeoutStore - Throw an exception if store access surpass a timeout.
+Starch::Plugin::TimeoutStore - Throw an exception if store access surpasses a timeout.
 
 =head1 SYNOPSIS
 

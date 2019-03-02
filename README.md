@@ -1,6 +1,6 @@
 # NAME
 
-Starch::Plugin::TimeoutStore - Throw an exception if store access surpass a timeout.
+Starch::Plugin::TimeoutStore - Throw an exception if store access surpasses a timeout.
 
 # SYNOPSIS
 
